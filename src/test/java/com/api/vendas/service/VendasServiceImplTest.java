@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static java.util.Optional.ofNullable;
 import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(MockitoExtension.class)
@@ -45,6 +46,12 @@ class VendasServiceImplTest {
 
     @Test
     void buscarProdutoPorId() {
+        //when
+        Mockito.when(repository.findById(Mockito.anyLong())).thenReturn(ofNullable(produto));
+        //given
+
+        //assert
+        assertEquals(produto,service.buscarProdutoPorId(Mockito.anyLong()));
     }
 
     @Test
