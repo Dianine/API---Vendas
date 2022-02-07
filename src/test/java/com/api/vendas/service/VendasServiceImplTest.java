@@ -19,7 +19,7 @@ import java.util.List;
 import static java.util.Optional.ofNullable;
 import static org.junit.jupiter.api.Assertions.*;
 
-@ExtendWith(MockitoExtension.class)
+/*@ExtendWith(MockitoExtension.class)
 class VendasServiceImplTest {
 
     @InjectMocks
@@ -65,4 +65,4 @@ class VendasServiceImplTest {
     @Test
     void deletarProdutoPorId() {
     }
-}
+}  */

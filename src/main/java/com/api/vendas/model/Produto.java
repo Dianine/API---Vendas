@@ -14,16 +14,16 @@ import java.math.BigDecimal;
 @Builder
 @NoArgsConstructor // criar construtor sem parametros
 @AllArgsConstructor // criar construtor com parametros
-//@Table(name = "Tb_Produto")
+@Table(name = "Tb_Cadastro_Thomas")
 public class Produto implements Serializable {
     public static final Long serialVersionUID =1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private String descricao;
-    private double preco;
-    private BigDecimal quantidade;
+    private String nome;
+    private double idade;
+    //private BigDecimal quantidade;
 
 
 }

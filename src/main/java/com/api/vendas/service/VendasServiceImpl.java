@@ -32,9 +32,9 @@ public class VendasServiceImpl implements VendasService{
         return repository.findById(id)
                 .map(search -> search = Produto.builder()
                         .id(produto.getId())
-                        .preco(produto.getPreco())
-                        .descricao(produto.getDescricao())
-                        .quantidade(produto.getQuantidade())
+                        .nome(produto.getNome())
+                        .idade(produto.getIdade())
+                        //.quantidade(produto.getQuantidade())
                         .build())
                 .orElseThrow(() -> new RuntimeException());
     }
